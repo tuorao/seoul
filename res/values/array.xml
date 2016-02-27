@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="selected">
+        <item>축구장</item>
+        <item>배드민턴장</item>
+        <item>야구장</item>
+        <item>족구장</item>
+        <item>농구장</item>
+        <item>풋살경기장</item>
+        <item>골프장</item>
+        <item>다목적경기장</item>
+    </string-array>
+</resources>

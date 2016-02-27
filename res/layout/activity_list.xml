@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/all_titlebar"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="목록 보기"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rel01"
+        android:layout_below="@+id/sortLayout" >
+    </ListView>
+
+    <RelativeLayout 
+        android:id="@+id/rel01"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bottomBtnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_left" />
+
+        <Button
+            android:id="@+id/bottomBtnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_right_click" />
+    </LinearLayout>
+    <ImageView 
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bottom_center"
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sortLayout"
+        android:layout_below="@+id/RelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" >
+
+        <ToggleButton
+            android:id="@+id/toggle"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/list_toggle" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

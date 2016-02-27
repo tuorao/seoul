@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ui_background"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible"
+        android:layout_marginTop="68dp" />
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/all_titlebar"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="체육시설 종목선택"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/btn_map"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="42dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ui_btn_map"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/btn_list"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ui_btn_list"
+            android:onClick="onClick" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ui_pointer" />
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/linearLayout2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/header"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ui_bar"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <RadioGroup 
+            android:id="@+id/radioGroup"
+            android:layout_width="200dp"
+            
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/radioSoc"
+            >
+        <RadioButton
+            android:id="@+id/radioSoc"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:button="@drawable/ui_star"
+            android:text="축구장" />
+
+        <RadioButton
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:button="@drawable/ui_star"
+            android:text="야구장" />
+
+        <RadioButton
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:button="@drawable/ui_star"
+            android:text="농구장" />
+        <RadioButton
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:button="@drawable/ui_star"
+            android:text="골프장" />
+        <RadioButton
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:button="@drawable/ui_star"
+            android:text="족구장" />
+        <RadioButton
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:button="@drawable/ui_star"
+            android:text="풋살장" />
+        <RadioButton
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:button="@drawable/ui_star"
+            android:text="배구장" />
+        <RadioButton
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:button="@drawable/ui_star"
+            android:text="테니스장" />
+        <RadioButton
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:button="@drawable/ui_star"
+            android:text="교육시설" />
+        <RadioButton
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:button="@drawable/ui_star"
+            android:text="배드민턴장" />
+        <RadioButton
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:button="@drawable/ui_star"
+            android:text="다목적경기장" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ui_bar"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
